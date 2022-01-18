@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <canvas width=600 height='600'></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+
+        const width = 60;
+        const height = 60;
+        const gap = 20;
+        let x, y;
+        
+        for (let i = 0; i < 5; i++){
+            for(let j = 0; j < 5 ; j++){
+                 x = 100 + (width + gap) * i;
+                 y = 100 + (height + gap) * j;
+                context.beginPath();
+                context.rect(x, y, width, height);
+                context.lineWidth = 4;
+                context.stroke();
+
+                //if (i > 0 && i < 4)
+                if(Math.random() > 0.5) {                    
+                    context.beginPath();
+                    context.rect(x + 8, y + 8, width - 16, height - 16);
+                    context.stroke();
+                }
+            }
+        }
+
+        //Conteúdo
+
+        //Arrays
+        //let years = [ 2040, 2041, 2042]
+        let menu = ['starter','menu','dessert','drinks','sides'];
+
+        for( let i= 0; i <menu.length ; i++){
+            console.log(menu[i]);
+        }
+
+        let years = [];
+
+        for ( let i=0; i <10; i++){
+            years.push(2040 + i);
+        }
+        console.log(years);
+
+        //maneiras de determinar uma variável
+        const gravity = 9.81;
+        let velocity = 0.0;
+
+        //outro método de loop que executa uma função em cada elemento de uma array
+        menu.forEach(item =>{
+            console.log(item);
+        })
+
+    </script>
+</body>
+</html>
