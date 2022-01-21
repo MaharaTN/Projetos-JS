@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+html,body{height:100%;}
+
+.sidebar{
+    float: left;
+    width: 250px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y:auto;
+    background-color:black;
+    overflow-x:hidden;
+
+}
+
+.sidebar-wraper{
+    padding-bottom:200px
+}
+
+.sidebar_menu{
+    margin: 20px 0;
+    color: rgb(190,190,190);
+}
+
+.sidebar_logo img{
+    max-width: 130px;
+    width:100%;
+}
+
+.sidebar_menu a{
+    color: rgb(190,190,190);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar_menu svg{
+    margin:0 20px;
+}
+
+.sidebar_menu a.sidebar_menu_selecionado{
+    color:white;
+    background-color: rgb(80,80,80);
+    border-radius: 5px;
+}
+
+.sidebar_menu_item{
+    margin-top:12px;
+    cursor:pointer;
+    vertical-align:middle;
+}
+
+.sidedbar_menu p.sidebar_menu_title{
+    color: white;
+    text-transform: uppercase;
+    font-size:14px;
+}
+
+.sidebar_menu_item_componente{
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    color: black;
+    font-weight:bold;
+    background-color:white;
+}
+
+.sidebar_menu_item span{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.sidebar_menu_item img{
+    width:30px;
+    height: 30px;
+    vertical-align: middle;
+    display:inline-block;
+}
+
+.sidebar_playlists{
+    padding: 2px;
+    
+
+}
+
+.sidebar_playlists a{
+    margin: 10px 0;
+    display: block;
+    color: rgb(190,190,190);
+    text-decoration: none;
+}
+
+.sidebar_playlists a:hover{
+    color:white;
+}
+
+/*Parte que apresenta as playlists*/
+
+.main{
+    width: calc(100% - 250px);
+    background-color: rgb(30,30,30);
+    height: 100%;
+
+    float:left;/*utilizando o float invés do flexbox por questões de garantia de que irá rodar liso em todos os browsers*/
+    padding: 15px 50px;
+    overflow-y: auto;
+}
+
+.main_row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main_wraper{
+    padding-bottom:200px;
+
+}
+
+.main_row_title{
+    width: 100%;
+}
+
+.main_row_title h2{
+    color:white;
+}
+
+.main_col{
+    cursor: pointer;
+    width:10!;
+    margin-right:1%;
+    margin-top:20px;
+
+    background-color: #282828;
+    border-radius: 8px;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+.main_col h3{
+    color: white;
+    margin: 8px 0;
+}
+
+.main_col p{
+    color: rgb(100,100,100);
+    margin: 8px 0;
+    font-size: 13px;
+    text-align: left;
+}

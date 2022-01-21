@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-wraper">
+
+            <div class="sidebar_logo">
+                <img src=IMG/logo.png />
+            </div> <!--sidebar_logo-->
+
+            <div class="sidebar_menu">
+                <a class="sidebar_menu_selecionado" href="#"><i class="fas fa-home"></i>Início</a>
+                <a href="#"><i class="fas fa-search"></i>Buscar</a>
+                <a href="#"><i class="fas fa-database"></i>Biblioteca</a>
+            </div><!--sidebar_menu-->
+
+            <div class="sidebar_menu">
+                <!--<p class="sidebar_menu_title">Playlists</p>-->
+
+                <div class="sidebar_menu_item">
+                    <div class="sidebar_menu_item_componente">
+                        <span style="font-size: 20px;" style="text-align:center">+</span>
+                    </div><!--sidebar_menu_item-->
+                    <span>Criar Playlist</span>
+                </div><!--sidebar_menu_item-->
+
+                <div class="sidebar_menu_item">
+                    <img src="IMG/musicas_curtidas.png"/>
+                <span>Músicas Curtidas</span>
+                </div><!--sidebar_menu_item-->
+            </div><!--sidebar_menu-->
+
+            <div class="sidebar_playlists" style="border-top: 1px solid rgb(40,40,40);">
+                <a href="">Daviake + Mah</a>
+                <a href="">As mais tocadas no seu 2021</a>
+                <a href="">Hipnose Radio</a>
+                <a href="">Mix hip hop</a>
+                <a href="">Mix de Péricles</a>
+            </div><!--sidebar_playlists-->
+
+            <div class="sidebar_playlists">
+                <a href="">Mix de Pedro Sampaio</a>
+                <a href="">Mix anos 2010</a>
+                <a href="">KIRA Rádio</a>
+                <a href="">Vibe pra dia 10/10</a>
+                <a href="">Faxina com Sofrência</a>
+            </div><!--sidebar_playlists-->
+
+            <div class="sidebar_playlists">
+                <a href="">Programando Felizin</a>
+                <a href="">Pra Viajar</a>
+                <a href="">Coisa Boa Rádio</a>
+                <a href="">Atitude 67 Rádio</a>
+                <a href="">This is Seu Jorge</a>
+            </div><!--sidebar_playlists-->
+
+        </div><!--sidebar_wraper-->
+
+    </div> <!--sidebar-->
+
+    <div class="main">
+        
+        <div class="main_wraper">
+            
+            <div class="main_row">
+                <div class="main_row_title"><h2>Paradas</h2></div><!--main_row_title-->
+                
+                <div class="main_col">
+                    <img src="IMG/top_50_brasil.png"/>
+                    <h3>Top 50 Brasil</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->
+                
+                <div class="main_col">
+                    <img src="IMG/top_50_global.png"/>
+                    <h3>Top 50 Global</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->
+                
+                <div class="main_col">
+                    <img src="IMG/top_brasil.png"/>
+                    <h3>Top Brasil</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->
+                
+                <div class="main_col">
+                    <img src="IMG/viral_sao_paulo.png"/>
+                    <h3>Viral São Paulo BR</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->
+                
+                <div class="main_col">
+                    <img src="IMG/viral_rio_de_janeiro.png"/>
+                    <h3>Viral Rio de Janeiro</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->
+                
+                <div class="main_col">
+                    <img src="IMG/viral_brasilia.png"/>
+                    <h3>Viral Brasília</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->    
+                
+                <div class="main_col">
+                    <img src="IMG/viva_latino.png"/>
+                    <h3>Viral Latino</h3>
+                    <p>Descrição da playlist</p>
+                </div><!--main_col-->
+
+            </div><!--main_row-->
+
+        </div><!--div_main_wraper-->
+
+    </div><!--div_main-->
+
+    <div class="main">
+        
+        <div class="main_wraper">
+            
+            <div class="main_row">
+                <div class="main_row_title"><h2>Para acompanhar seu dia</h2></div><!--main_row_title-->
+                
+                <div class="main_col" data-image="IMG/por_supuesto.png" data-artist="Marina Sena" data-song="Por Supuesto" data-file="ASSETS\- MARINA SENA - POR SUPUESTO.mp3">
+                    <img src="IMG/por_supuesto.png"/>
+                    <h3>Marina Sena</h3>
+                    <p>Por Supuesto</p>
+                </div><!--main_col-->
+                
+                <div class="main_col" data-image="IMG/Basic.png" data-artist="NiGHTS" data-song="Basic" data-file="ASSETS\- N i G H T S - BASIC.mp3">
+                    <img src="IMG/Basic.png"/>
+                    <h3>NiGHTS</h3>
+                    <p>Basic</p>
+                </div><!--main_col-->
+
+            </div><!--main_row-->
+
+        </div><!--div_main_wraper-->
+
+    </div> <!--main-->
+
+
+    <div class="player">
+        <div class="player_artist">
+
+        </div>
+        <div class="player_control">
+            <div class="player_control_buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/all.min.js"></script>
+</body>
+</html>
